@@ -1,15 +1,13 @@
+import java.util.Scanner;
 public class Factorial{
-    static int factorial(int n){
-        int f = 1;
-        for(int i = 1; i <= n; i++){
-            f = f * i;
-        }
-        return f;
-    }
     public static void main(String[] args){
-         int n = 10;
-         int result = factorial(n);
-
-        System.out.println("Factorial:" + result);
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a Number:");
+        int n = sc.nextInt();
+        int fact = 1;
+        for(int i =1; i <= n; i++){
+            fact = fact * i;
+        }
+        System.out.println(fact);
     }
 }
